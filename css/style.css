@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+a{
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	background-color: #60a9ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.panel_table{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 25px;
+	width: 100%;
+	max-width: 900px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+}
+.pricing_plan{
+	border-bottom: 1px solid #e1f1ff;
+}
+.pricing_plan:last-child{
+	border-bottom: none;
+}
+.pricing_img{
+	margin-bottom: 25px;
+	max-width: 100%;
+}
+.pricing_header{
+	color: #888;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.pricing_featuers{
+	margin: 50px 0 25px;
+	color: #016ff9;
+}
+.pricing_features_item{
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 15px;
+	border-top: 1px solid #e1f1ff;;
+}
+.pricing_features_item:last-child{
+	border-bottom: 1px solid #e1f1ff;
+}
+.pricing_price{
+	color: #016ff9;
+	display: block;
+	font-size: 32px;
+	font-weight: 700;
+}
+.pricing_button{
+	border: 1px solid #9dd1ff;
+	border-radius: 10px;
+	color: #348efe;
+	display: inline-block;
+	padding: 15px 35px;
+	margin: 25px 0;
+	transition: all 200ms ease-in-out;
+}
+.pricing_button:hover, .pricing_button:focus{
+	background-color: #e1f1ff;
+}
+.pricing_button.is_featured{
+	background-color: #48aaff;
+	color: #fff;
+}
+.pricing_button.is_featured:hover{
+	background-color: #2599ff;
+	color: #fff;
+}
+
+@media (min-width:800px){
+	.panel_table{
+		flex-direction: row;
+	}
+	.pricing_plan{
+		border-bottom: none;
+		border-right: 1px solid #e1f1ff;
+		padding: 25px 50px;
+	}
+	.pricing_plan:last-child{
+		border-right: none;
+	}
+}
